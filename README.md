@@ -23,6 +23,19 @@ Proyek Laravel 12 yang memakai **laravel/ui** (Bootstrap) untuk scaffolding aute
 
 Database memakai **SQLite** (`database/database.sqlite`) sehingga **tidak perlu mengatur MySQL sama sekali**. File `.env` dan database sudah disertakan agar mudah dijalankan.
 
+## 📸 Tampilan
+
+<table>
+  <tr>
+    <td width="50%"><img src="docs/screenshots/01-welcome.png" alt="Halaman Sambutan"><br><sub>Halaman sambutan</sub></td>
+    <td width="50%"><img src="docs/screenshots/02-login.png" alt="Halaman Login"><br><sub>Login</sub></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="docs/screenshots/03-register.png" alt="Halaman Registrasi"><br><sub>Registrasi</sub></td>
+    <td width="50%"><img src="docs/screenshots/04-dashboard.png" alt="Dashboard"><br><sub>Dashboard (terlindungi)</sub></td>
+  </tr>
+</table>
+
 ## ✨ Fitur
 
 - 🏠 Halaman sambutan bergaya Bootstrap
