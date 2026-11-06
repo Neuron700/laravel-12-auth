@@ -21,7 +21,7 @@ Aplikasi **Laravel 12** dengan autentikasi lengkap (registrasi, login, logout, r
 
 Proyek Laravel 12 yang memakai **laravel/ui** (Bootstrap) untuk scaffolding autentikasi. Tujuannya mempelajari bagaimana framework menangani **routing, controller, Blade, migration, Eloquent, dan middleware** — berbeda dari tiga project sebelumnya yang MVC-nya ditulis manual.
 
-Database memakai **SQLite** (`database/database.sqlite`) sehingga **tidak perlu mengatur MySQL sama sekali**. File `.env` dan database sudah disertakan agar mudah dijalankan.
+Database memakai **SQLite** (`database/database.sqlite`) sehingga **tidak perlu mengatur MySQL sama sekali**. File `.env` tidak disertakan. Salin `.env.example` menjadi `.env`, lalu jalankan `php artisan key:generate`; database SQLite disertakan agar mudah dijalankan.
 
 ## 📸 Tampilan
 
@@ -79,7 +79,7 @@ flowchart LR
 ```
 project7/
 ├── artisan                    # Perintah Laravel
-├── .env                       # Konfigurasi (disertakan untuk latihan)
+├── .env.example                # Template konfigurasi (salin ke .env)
 ├── routes/web.php             # Definisi route
 ├── app/Http/Controllers/
 │   ├── HomeController.php
@@ -116,7 +116,7 @@ project7/
    composer install
    ```
 
-3. **Periksa `.env`** — sudah disertakan (berisi `APP_KEY`). `DB_CONNECTION=sqlite` (default).
+3. **Siapkan `.env`** — salin dari `.env.example`, lalu jalankan `php artisan key:generate`. `DB_CONNECTION=sqlite` (default).
 
 4. **Jalankan server**:
    ```bash
@@ -149,7 +149,7 @@ Password : rahasia123
 
 Atau **daftar akun baru** lewat halaman **Register** — cara paling mudah untuk mencoba.
 
-> ⚠️ Kredensial & `.env` disertakan hanya untuk keperluan **latihan**. Untuk proyek nyata: jangan commit `.env`, dan jangan pakai password contoh.
+> ⚠️ Kredensial demo hanya untuk keperluan **latihan**. Untuk proyek nyata: jangan commit `.env`, dan jangan pakai password contoh.
 
 ## 🧭 Route
 
